@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Aquí puedes conectar con tu backend o API de autenticación
         mensajeEstado.textContent = `¡Bienvenido/a de nuevo, ${email}!`;
         mensajeEstado.classList.add("exito");
         form.reset();
