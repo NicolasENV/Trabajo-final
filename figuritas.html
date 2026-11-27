@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/estilos.css">
-    <title>Figuritas</title>
+    <title>Inventario de Figuritas | Anime World</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-     <header class="header">
+    <header class="header">
         <div class="contenedor contenido-header">
             <a href="index.html" class="logo">Anime World</a>
             <nav aria-label="Navegación principal">
                 <ul class="nav-lista">
-                    <li><a href="index.html" class="activo">Home</a></li>
-                    <li><a href="#animes">Animes</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#animes">Animes</a></li>
                     <li><a href="Manga/index.html">Mangas</a></li>
-                    <li><a href="figuritas.html">Figuras</a></li>
+                    <li><a href="figuritas.html" class="activo">Figuras</a></li>
                     <li>
                         <a href="inicio-sesion.html" class="btn-sesion">
                             <img src="img-inicio-sesion/profile_user.png" alt="Icono de usuario" id="img-inicio-sesion">
@@ -26,36 +26,45 @@
             </nav>
         </div>
     </header>
-    <h1>Inventario de Figuritas</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Figura</th>
-                <th>Anime</th>
-                <th>Imagen</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Minimo</th>
-                <th>Subtotal</th>
-                <th>Estado</th>
 
-            </tr>
-        </thead>
-        <tbody id="cuerpo-tabla"></tbody>
-    </table>
-    <div id="resumen"></div>
-    <script src="js/figuritas.js"></script>
-        <footer class="footer">
+    <main class="main">
+        <div class="contenedor-inventario">
+            <h1 class="titulo-inventario">Inventario de Figuritas</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Figura</th>
+                        <th>Anime</th>
+                        <th>Imagen</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Mínimo</th>
+                        <th>Subtotal</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla"></tbody>
+            </table>
+
+            <div id="resumen"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
         <h2>Anime World</h2>
         <p>El lugar donde comienza tu aventura anime.</p>
         <div class="footer-enlaces">
             <a href="index.html">Home</a>
-            <a href="#animes">Animes</a>
+            <a href="index.html#animes">Animes</a>
             <a href="Manga/index.html">Mangas</a>
             <a href="figuritas.html">Figuras</a>
             <a href="inicio-sesion.html">Iniciar sesión</a>
         </div>
         <p class="copyright">© 2026 Anime World - Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/figuritas.js"></script>
 </body>
 </html>
+
