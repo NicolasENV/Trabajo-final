@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         mensajeEstado.textContent = `¡Bienvenido/a de nuevo, ${email}!`;
         mensajeEstado.classList.add("exito");
-        form.reset();
+        window.location.href = "index.html";
     });
 });
