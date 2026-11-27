@@ -1,0 +1,292 @@
+/* Reset básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff1e8;
+    color: #3b2332;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*----- HEADER COMPARTIDO -----*/
+
+.header {
+    background-color: #e47a9d;
+    color: #ffffff;
+    padding: 1.1rem 0;
+    border-bottom: 3px solid #5b3a4e;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 0.8rem;
+}
+
+.nav-lista a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.98rem;
+    transition: background-color 200ms ease;
+}
+
+.nav-lista a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-lista a.activo {
+    background-color: rgba(255, 255, 255, 0.28);
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+}
+
+.btn-sesion {
+    background-color: #f7c6d0;
+    color: #4a263a;
+    font-weight: 700;
+}
+
+.btn-sesion:hover {
+    background-color: #f2b0be;
+}
+
+#img-inicio-sesion {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/*----- MAIN -----*/
+main,
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.h2-main{
+    text-align: center;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.titulo-seccion h2 {
+    font-size: 1.75rem;
+    color: #5b3a4e;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.titulo-seccion h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #e47a9d;
+    margin: 0.55rem auto 0;
+}
+
+.titulo-seccion p {
+    color: #6f4b61;
+    font-size: 0.98rem;
+}
+/* Contenedor principal */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ubicación de productos en 3 columnas (como en la segunda imagen) */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Diseño de cada tarjeta (inspirado en la primera imagen) */
+.tarjeta-producto {
+    background-color: #f6f1e7; /* Tono crema suave */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la imagen */
+.contenedor-imagen {
+    width: 100%;
+    height: 260px;
+    background-color: #5c3a1e; /* Fondo café por si la imagen tarda o no llena el espacio */
+    overflow: hidden;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    display: block;
+}
+
+/* Contenido textual de la tarjeta */
+.info-producto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-producto h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2c221e;
+    margin-bottom: 8px;
+}
+
+.descripcion-producto {
+    font-size: 0.9rem;
+    color: #4a3f3a;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    flex-grow: 1; /* Empuja el precio y el botón hacia abajo para alinear tarjetas */
+}
+
+.precio-producto {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e4d2b; /* Verde oscuro como el precio de la primera imagen */
+    margin-bottom: 15px;
+}
+
+/* Botón de acción */
+.boton-producto {
+    background-color: #2c221e;
+    color: #f6f1e7;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.boton-producto:hover {
+    background-color: #4a3831;
+}
+
+/*----- FOOTER COMPARTIDO -----*/
+.footer {
+    background-color: #432839;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    border-top: 3px solid #e47a9d;
+}
+
+.footer h2 {
+    font-size: 1.35rem;
+    color: #f7c6d0;
+}
+
+.footer p {
+    font-size: 0.92rem;
+    color: #f3dfe8;
+}
+
+.footer-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 1.2rem;
+    margin: 0.25rem 0;
+}
+
+.footer-enlaces a {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.footer-enlaces a:hover {
+    color: #f7c6d0;
+    text-decoration: underline;
+}
+
+.footer .copyright {
+    font-size: 0.82rem;
+    color: #cfaec0;
+}
+
+/* Diseño responsivo para tablets y celulares */
+@media (max-width: 900px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+}
