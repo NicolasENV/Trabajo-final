@@ -191,11 +191,48 @@ ul {
 
 /*----- FOOTER -----*/
 .footer {
-    background-color: #5b3a4e;
+    background-color: #432839;
     color: #ffffff;
     text-align: center;
-    padding: 1.2rem 0;
-    font-size: 0.95rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    border-top: 3px solid #e47a9d;
+}
+
+.footer h2 {
+    font-size: 1.35rem;
+    color: #f7c6d0;
+}
+
+.footer p {
+    font-size: 0.92rem;
+    color: #f3dfe8;
+}
+
+.footer-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 1.2rem;
+    margin: 0.25rem 0;
+}
+
+.footer-enlaces a {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.footer-enlaces a:hover {
+    color: #f7c6d0;
+    text-decoration: underline;
+}
+
+.footer .copyright {
+    font-size: 0.82rem;
+    color: #cfaec0;
 }
 
 /*----- RESPONSIVE (TABLET / ESCRITORIO) -----*/
